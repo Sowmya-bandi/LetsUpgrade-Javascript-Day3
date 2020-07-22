@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Assignment</title>
+</head>
+<body id="background">
+	<h3>Question1</h3>
+	<h4>Write A Program That Will Iterate Over An Array Of Colors and Changes The Background Of The Page After 5 Seconds.</h4>
+	<script type="text/javascript">
+	  var i = 0;
+      function change() {
+      var doc = document.getElementById("background");
+      var color = ["black", "aqua", "brown", "teal"];
+      document.body.style.color='white';
+      doc.style.backgroundColor = color[i];
+      i = (i + 1) % color.length;
+      }
+      setInterval(change, 5000);
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DAY6 ASSIGNMENT</title>
+</head>
+<body>
+	<h3>Question3</h3>
+	<h4>Make a Webpage That Will Ask a Name Of The User. Then Display A Welcome Message ON The Wedpage. Also The Webpage Should also have a Clock.
+	Using The Toggle Method Of classList Add a Dark Mode  feature to the Website</h4>
+
+	<h1 id="title"></h1>
+    <h4 id="time"></h4>
+
+     <script type="text/javascript">
+
+      function changeColor(){
+        setTimeout(()=>{
+            document.body.style.backgroundColor='black';
+            document.body.style.color='white';
+            document.body.style.fontFamily='Helvetica';
+            },8000);
+        }
+
+        changeColor();
+
+      
+
+     // get name from user and change the title
+      const name = prompt("Enter your name","");
+
+      title.innerText += `Welcome to the family ${name}`;
+
+      //Time
+      const ctime = document.getElementById('time');
+
+
+      function clock(){
+          let date = new Date();
+          let time = date.toLocaleTimeString();
+          ctime.innerText = time;
+      }
+
+      // clock();
+
+      setInterval(clock,1000);
+
+
+
+     </script>
+
+
+</body>
+</html>
